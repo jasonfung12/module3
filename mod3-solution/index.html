@@ -40,6 +40,23 @@
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
 }
@@ -71,6 +88,9 @@ h2 {
     background: url('../images/jumbotron_1200.jpg') no-repeat;
     height: 675px;
   }
+  .navbar-toggle {
+    display: none;
+  }
 }
 
 /********** Medium devices only **********/
@@ -98,6 +118,9 @@ h2 {
   .container .jumbotron {
     background: url('../images/jumbotron_768.jpg') no-repeat;
     height: 432px;
+  }
+  .navbar-toggle {
+    display: none;
   }
   /* End Home Page */
 }
@@ -194,6 +217,23 @@ h2 {
             <span class="icon-bar"></span>
           </button>
         </div>
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="visible-xs">
+              <a href="#">
+                Chicken</a>
+            </li>
+            <li class="visible-xs">
+              <a href="#">
+                Beef
+              </a>
+            </li>
+            <li class="visible-xs">
+              <a href="#">
+                Sushi</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
       </div><!-- .container -->
     </nav><!-- #header-nav -->
   </header>
@@ -204,19 +244,19 @@ h2 {
 
     <div id="home-tiles" class="row">
       <div class="col-md-12 col-sm-12 col-xs-12">
-        <div id="menu-tile"><span>Chicken</span>
+        <div id="menu-tile"><h3>Chicken</h3>
           <p>1234567890abcdedfhijklmnopqrstuvwxyz,
           I like Chicken!!! Chicken!!!!!!!!!!!!!!!!! happy birthdayyyyyyyyyyy!!!!!!!!!!!!!
         okokokokokokokokokokokok okokokokokokokookokokokokokokokokokokok okokokokokokokokokokokokokokokokokokokokokokokk byebyebyebyebyebyebyebye</p>
         </div>
       </div>
       <div class="col-md-12 col-sm-12 col-xs-12">
-        <div id="specials-tile"><span>Beef</span>
+        <div id="specials-tile"><h3>Beef</h3>
           <p>I like BEEF!!! BEEF!!!!!!!!!!!!!!!!! happy birthdayyyyyyyyyyy!!!!!!!!!!!!!
         okokokokokokokokokokokokokokokokokokokookokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokk byebyebyebyebyebyebyebye</p></div>
       </div>
       <div class="col-md-12 col-sm-12 col-xs-12">
-        <div id="map-tile"><span>Sushi</span>
+        <div id="map-tile"><h3>Sushi</h3>
           <p>I like SUSHI! SUSHI!!!!!!!!!!!!!!!! 
             happy birthdayyyyyyyyyyy!!!!!!!!!!!!!
         okokokokokokokokokokokokokokokokokokokookokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokk byebyebyebyebyebyebyebye</p></div>
